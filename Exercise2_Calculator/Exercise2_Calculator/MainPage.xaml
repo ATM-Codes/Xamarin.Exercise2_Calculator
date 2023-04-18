@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Exercise2_Calculator.MainPage">
+
+    <StackLayout Background="Black" >
+        <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Background="Black">
+            <Grid.RowDefinitions>
+                <!---The beginning of rows defnitions.-->
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <!---The end of row definitions.-->
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <!---The beginning of column defnitions.-->
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <!---The end of column defnitions.-->
+            </Grid.ColumnDefinitions>
+            <!-- NOTE: The first Name Label has to occupy four columns. Therefore, the Row and Column have to be zero. I tried adding numbers other than 0, and they didn't work-->
+            <Label Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="End" BackgroundColor="Black" Text="123456789" HorizontalOptions="End" VerticalOptions="Center" Margin="15" FontSize="40" TextColor="White" Grid.ColumnSpan="4"/>
+            <Button Grid.Row="1" Grid.Column="0" Text="AC" FontSize="25" BackgroundColor="White" CornerRadius="50" Padding="15"/>
+            <Button Grid.Row="1" Grid.Column="1" Text="Del" FontSize="25" BackgroundColor="White" CornerRadius="50" Padding="15"/>
+            <Button Grid.Row="1" Grid.Column="2" Text="-/+" FontSize="25" BackgroundColor="White" CornerRadius="50" Padding="15"/>
+            <Button Grid.Row="1" Grid.Column="3" Text="+" FontSize="30" BackgroundColor="Orange" TextColor="White" CornerRadius="50" Padding="15"/>
+            <Button Grid.Row="2" Grid.Column="0" Text="7" FontSize="25" BackgroundColor="White" CornerRadius="50" Padding="15"/>
+            <Button Grid.Row="2" Grid.Column="1" Text="8" FontSize="25" BackgroundColor="White" CornerRadius="50" Padding="15"/>
+            <Button Grid.Row="2" Grid.Column="2" Text="9" FontSize="25" BackgroundColor="White" CornerRadius="50" Padding="15"/>
+            <Button Grid.Row="2" Grid.Column="3" Text="-" FontSize="30" BackgroundColor="Orange" TextColor="White" CornerRadius="50" Padding="15"/>
+            <Button Grid.Row="3" Grid.Column="0" Text="4" FontSize="25" BackgroundColor="White" CornerRadius="50" Padding="15"/>
+            <Button Grid.Row="3" Grid.Column="1" Text="5" FontSize="25" BackgroundColor="White" CornerRadius="50" Padding="15"/>
+            <Button Grid.Row="3" Grid.Column="2" Text="6" FontSize="25" BackgroundColor="White" CornerRadius="50" Padding="15"/>
+            <Button Grid.Row="3" Grid.Column="3" Text="X" FontSize="30" BackgroundColor="Orange" TextColor="White" CornerRadius="50" Padding="15"/>
+            <Button Grid.Row="4" Grid.Column="0" Text="1" FontSize="25" BackgroundColor="White" CornerRadius="50" Padding="15"/>
+            <Button Grid.Row="4" Grid.Column="1" Text="2" FontSize="25" BackgroundColor="White" CornerRadius="50" Padding="15"/>
+            <Button Grid.Row="4" Grid.Column="2" Text="3" FontSize="25" BackgroundColor="White" CornerRadius="50" Padding="15"/>
+            <Button Grid.Row="4" Grid.Column="3" Text="/" FontSize="30" BackgroundColor="Orange" TextColor="White" CornerRadius="50" Padding="15"/>
+            <Button Grid.Row="5" Grid.Column="0" Text="0" FontSize="25" BackgroundColor="White" CornerRadius="50" Padding="15" Grid.ColumnSpan="2"/>
+            <Button Grid.Row="5" Grid.Column="2" Text="." FontSize="30" BackgroundColor="White" CornerRadius="50" Padding="15"/>
+            <Button Grid.Row="5" Grid.Column="3" Text="=" FontSize="30" BackgroundColor="Orange" TextColor="White" CornerRadius="50" Padding="15"/>
+
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
